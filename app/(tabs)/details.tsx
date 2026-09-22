@@ -112,6 +112,14 @@ const scheduleData: Record<string, ScheduleItem[]> = {
       instructor: 'Mr. Omecello',
       room: 'TBA',
     },
+    {
+      day: 'S',
+      time: '1:00 PM - 5:00 PM',
+      subject: 'ITM 110 / LEC/LAB',
+      description: 'System Administration & Maintenance ',
+      instructor: 'Mr. Lato',
+      room: 'TBA',
+    },
   ],
   '4g': [
     {
@@ -139,12 +147,31 @@ const scheduleData: Record<string, ScheduleItem[]> = {
       room: 'TBA',
     },
     {
-      day: 'MWF',
+      day: 'MW',
       time: '2:30 PM - 4:30 PM',
       subject: 'Free Elec. 102',
       description: 'Information Assurance & Security 2',
       instructor: 'Mr. Enriquez',
       room: 'TBA',
+
+    },
+    {
+      day: 'S',
+      time: '8:30 AM - 12:00 PM',
+      subject: 'ITM 100',
+      description: 'Capstone Project 1 / IT Research 1 ',
+      instructor: 'Mr. Lavador',
+      room: 'TBA',
+      
+    },
+     {
+      day: 'S',
+      time: '12:30 PM - 4:30 PM',
+      subject: 'ITM 110 / LEC/LAB',
+      description: 'System Administration & Maintenance ',
+      instructor: 'Mr. Javier',
+      room: 'TBA',
+      
     },
   ],
 };
