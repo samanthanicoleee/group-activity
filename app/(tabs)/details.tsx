@@ -13,57 +13,6 @@ interface ScheduleItem {
 
 const scheduleData: Record<string, ScheduleItem[]> = {
   
-  '4a': [
-    {
-      day: 'TTH',
-      time: '9:30 AM - 11:00 AM',
-      subject: 'Free Elec. 103 / LEC/LAB',
-      description: 'System Administration & Maintenance',
-      instructor: 'Mr. Javier',
-      room: 'LAB 1',
-    },
-    {
-      day: 'TTH',
-      time: '10:30 AM - 12:00 PM',
-      subject: 'Soc. Sci. 104',
-      description: 'Politics & Governance (w/ Phil. Const.)',
-      instructor: 'Mr. Buntaguer',
-      room: 'L14',
-    },
-    {
-      day: 'MWF',
-      time: '1:00 PM - 2:30 PM',
-      subject: 'Humanities 102',
-      description: 'Logic',
-      instructor: 'Mr. Dumayac',
-      room: '301',
-    },
-    {
-      day: 'MWF',
-      time: '2:30 PM - 4:30 PM',
-      subject: 'Free Elec. 104 / LEC/LAB',
-      description: 'Integrative Programming & Technologies 2',
-      instructor: 'TBA',
-      room: 'TBA',
-    },
-    {
-      day: 'TTH',
-      time: '12:30 PM - 2:00 PM',
-      subject: 'ITEC 111',
-      description: 'Capstone Project 1 / IT Research 1',
-      instructor: 'Mr. Lavador',
-      room: '201/200',
-    },
-    {
-      day: 'TTH',
-      time: '2:00 PM - 4:00 PM',
-      subject: 'Free Elec. 102 / LEC/LAB',
-      description: 'Information Assurance & Security 2',
-      instructor: 'TBA',
-      room: 'TBA',
-    },
-  ],
-
   '4e': [
     {
       day: 'MWF',
@@ -222,44 +171,10 @@ const scheduleData: Record<string, ScheduleItem[]> = {
       description: 'System Administration & Maintenance ',
       instructor: 'Mr. Javier',
       room: 'TBA',
-       },
-  ],
-     
-      '4i': [
-    {
-      day: 'MWF',
-      time: '7:30 AM - 9:30 AM',
-      subject: 'Free Elec. 102 / LEC/LAB',
-      description: 'Information Assurance & Security 2',
-      instructor: 'TBA',
-      room: 'TBA',
-    },
-    {
-      day: 'TTH',
-      time: '10:30 AM - 12:00 PM',
-      subject: 'Soc. Sci. 104',
-      description: 'Politics & Governance (w/ Phil. Const.)',
-      instructor: 'TBA',
-      room: 'TBA',
-    },
-    {
-      day: 'MWF',
-      time: '1:00 PM - 2:00 PM',
-      subject: 'Humanities 102',
-      description: 'Logic',
-      instructor: 'TBA',
-      room: 'TBA',
-    },
-    {
-      day: 'MWF',
-      time: '2:00 PM - 4:00 PM',
-      subject: 'Free Elec. 103 / LEC/LAB',
-      description: 'System Administration & Maintenance',
-      instructor: 'TBA',
-      room: 'TBA',
+      
     },
   ],
-    }
+};
 
 export default function DetailsScreen() {
   const { sectionId } = useLocalSearchParams();
