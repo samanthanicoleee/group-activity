@@ -103,6 +103,40 @@ const scheduleData: Record<string, any> = {
       instructor: 'Mr. Omecello',
       room: 'TBA',
     },
+    ],
+  '4g': [
+    {
+      day: 'MWF',
+      time: '11:30 AM - 12:30 PM',
+      subject: 'Soc. Sci. 104',
+      description: 'Social Science',
+      instructor: 'Ms. Alapera',
+      room: 'TBA',
+    },
+    {
+      day: 'TTH',
+      time: '12:30 PM - 2:30 PM',
+      subject: 'Free Elec. 104',
+      description: 'Integrative Programming & Technologies 2',
+      instructor: 'Mr. Omecillo',
+      room: 'TBA',
+    },
+    {
+      day: 'TTH',
+      time: '2:30 PM - 3:30 PM',
+      subject: 'HUM 102',
+      description: 'Humanities 102',
+      instructor: 'Ms. Batoon',
+      room: 'TBA',
+    },
+    {
+      day: 'MWF',
+      time: '2:30 PM - 4:30 PM',
+      subject: 'Free Elec. 102',
+      description: 'Information Assurance & Security 2',
+      instructor: 'Mr. Enriquez',
+      room: 'TBA',
+    },
   ],
 };
 
