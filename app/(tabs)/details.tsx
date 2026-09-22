@@ -1,9 +1,18 @@
 import { router, useLocalSearchParams } from 'expo-router';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-// Schedule Data para sa Section 4E, 4F, at 4G
-const scheduleData: Record<string, any> = {
+interface ScheduleItem {
+  day: string;
+  time: string;
+  subject: string;
+  description: string;
+  instructor: string;
+  room: string;
+}
+
+const scheduleData: Record<string, ScheduleItem[]> = {
+  
   '4e': [
     {
       day: 'MWF',
@@ -37,7 +46,7 @@ const scheduleData: Record<string, any> = {
       instructor: 'Ms. Perez C.',
       room: 'TBA',
     },
-     {
+    {
       day: 'TTH',
       time: '7:30 AM - 9:30 AM',
       subject: 'ITM 112 / LEC/LAB',
@@ -71,7 +80,7 @@ const scheduleData: Record<string, any> = {
       instructor: 'Ms. Perez C.',
       room: '101',
     },
-        {
+    {
       day: 'MWF',
       time: '1:00 PM - 3:00 PM',
       subject: 'ITM 110 / LEC/LAB',
@@ -103,7 +112,7 @@ const scheduleData: Record<string, any> = {
       instructor: 'Mr. Omecello',
       room: 'TBA',
     },
-    ],
+  ],
   '4g': [
     {
       day: 'MWF',
@@ -161,7 +170,7 @@ export default function DetailsScreen() {
       <Text style={styles.subTitle}>School Year 2026 - 2027 | 1st Semester</Text>
 
       {classList ? (
-        classList.map((item: any, index: number) => (
+        classList.map((item, index) => (
           <View key={index} style={styles.scheduleCard}>
             <View style={styles.badgeRow}>
               <Text style={styles.dayBadge}>{item.day}</Text>
@@ -169,14 +178,14 @@ export default function DetailsScreen() {
             </View>
             <Text style={styles.subjectText}>{item.subject}</Text>
             <Text style={styles.descText}>{item.description}</Text>
-            <Text style={styles.infoText}>👩‍🏫 Instructor: {item.instructor}</Text>
+            <Text style={styles.infoText}>👨‍🏫 Instructor: {item.instructor}</Text>
             <Text style={styles.infoText}>🏫 Room: {item.room}</Text>
           </View>
         ))
       ) : (
         <View style={styles.placeholderCard}>
           <Text style={styles.placeholderText}>
-            [Details Screen logic and schedule layout to be implemented by group member]
+            No schedule found for section {currentSection.toUpperCase()}.
           </Text>
         </View>
       )}

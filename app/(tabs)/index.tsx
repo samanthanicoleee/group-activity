@@ -1,5 +1,5 @@
 import { router } from 'expo-router';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { ScrollView, StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 const fourthYearSections = [
